@@ -1,0 +1,120 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Lòrcen 💙</title>  <!-- Cute font -->  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Great+Vibes&display=swap" rel="stylesheet">  <style>
+    body {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      background: linear-gradient(rgba(180,200,255,0.7), rgba(255,255,255,0.7)), url('https://images.unsplash.com/photo-1526047932273-341f2a7631f9');
+      background-size: cover;
+      background-position: center;
+      color: #1e3a8a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .container {
+      background: rgba(255,255,255,0.85);
+      padding: 30px;
+      border-radius: 25px;
+      max-width: 750px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    .hidden { display: none; }
+
+    h1, h2 {
+      font-family: 'Great Vibes', cursive;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 25px;
+      background: #1e3a8a;
+      color: #fff;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #3b82f6;
+      transform: scale(1.05);
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 20px;
+      margin-top: 20px;
+    }
+
+    .message {
+      text-align: left;
+      margin-top: 20px;
+      white-space: pre-line;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+  </style></head>
+<body><!-- PASSWORD --><div id="password" class="container">
+  <h2>before you enter… 💙</h2>
+  <p>what’s the name of the one i’ll never forget?</p>
+  <input type="password" id="pass" />
+  <br>
+  <button onclick="check()">enter</button>
+</div><!-- FLOWERS --><div id="page1" class="container hidden">
+  <h1>i love you, lòrcen 💙</h1>
+  <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946" alt="flowers">
+  <button onclick="next('page2')">next</button>
+</div><!-- COUPLE --><div id="page2" class="container hidden">
+  <h1>us 💙</h1>
+  <img src="YOUR_IMAGE_HERE.jpg" alt="keng & nampingster">
+  <button onclick="next('page3')">next</button>
+</div><!-- MESSAGE --><div id="page3" class="container hidden">
+  <h2>for you…</h2>
+  <div class="message">
+hi, my adumbean, my lòrcen, my baby.if you’re reading this tonight or maybe tomorrow, i just want you to know something i’ve been meaning to say for a while now. loving you, knowing you, and having you in my life became the reason why i slowly stepped out of my shadows. the insecurities i used to carry so heavily… they feel quieter when i’m with you, or even when i’m just thinking about you. it’s like, for the first time, i don’t feel like i have to hide parts of myself.
+
+you make me feel seen. you make me feel like you’ve got me—every part of me, even the ones i thought were already lost or buried. and now here i am, slowly finding my way back to the version of myself i thought i could never be again.
+
+i know i’ve messed up more than once. i know there were times i hurt you, and i carry that with me. but despite everything, you still chose to give me another chance. and that’s something i will always cherish. because no matter how broken i felt, no matter how much i doubted myself, you still trusted me… and you still loved me.
+
+after everything i went through in the past, i really thought that was it for me. i thought those experiences defined what i deserved—that maybe love like this wasn’t meant for me anymore. but you proved me wrong in the most gentle way possible.
+
+and i know, we’re both aware of our age gap—i won’t even say it anymore, nakakahiya na hahaha—but even with that, you still chose to trust me with your whole heart. and that means so much more than i can ever explain.
+
+thank you for understanding me, especially during the times i get busy, when i can’t always talk to you the way i want to. you never made me feel guilty for it. instead, you stayed patient, you stayed soft with me. and that’s something i never really experienced before… and honestly, i fell even more because of that.
+
+i also see how you reciprocate everything i give. my efforts, my love—you give it back without hesitation, without making it feel like it’s a burden. walang sumbatan, walang pagod. just pure, genuine care. and baby, i really, really love you for that.
+
+you know, someone once asked me what i liked about you. and i couldn’t give them an exact answer. not because there’s nothing—but because there’s too much. and also… do we really need a reason to love someone? i believe feelings like this don’t need explanations. they just happen, and we feel them deeply.
+
+i’m slowly memorizing you, baby. not just your name or your face—kahit alam mong mahina ako sa gano’n hahaha—but the way you are, your little habits, your words, the way you care, the way you exist in my life. i’m learning you, piece by piece, and i don’t ever want to stop.
+
+so let me ask you again, gently, sincerely—
+
+may i court you again, my baby?
+
+  </div>
+</div><script>
+function check() {
+  const val = document.getElementById('pass').value.toLowerCase();
+  if(val === 'luna'){
+    document.getElementById('password').classList.add('hidden');
+    document.getElementById('page1').classList.remove('hidden');
+  } else {
+    alert('wrong password 💔');
+  }
+}
+
+function next(id){
+  document.querySelectorAll('.container').forEach(el => el.classList.add('hidden'));
+  document.getElementById(id).classList.remove('hidden');
+}
+</script></body>
+</html>
